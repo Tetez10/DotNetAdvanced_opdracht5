@@ -36,7 +36,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(359, 297);
+            this.button1.Location = new System.Drawing.Point(558, 206);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 23);
             this.button1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(359, 221);
+            this.textBox1.Location = new System.Drawing.Point(558, 154);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 1;
@@ -54,17 +54,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(359, 184);
+            this.label1.Location = new System.Drawing.Point(558, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Gemiddelde";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
-            this.listBox1.Location = new System.Drawing.Point(47, 45);
+            this.listBox1.Location = new System.Drawing.Point(48, 131);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(254, 109);
             this.listBox1.TabIndex = 3;
@@ -80,6 +81,7 @@
             this.Controls.Add(this.button1);
             this.Name = "KindForm";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.KindForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
