@@ -1,6 +1,6 @@
 ﻿namespace Oef2
 {
-    partial class Form1
+    partial class GemiddeldeMDI
     {
         /// <summary>
         ///  Required designer variable.

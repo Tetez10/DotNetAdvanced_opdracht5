@@ -1,10 +1,10 @@
 namespace Oef2
 {
-    public partial class Form1 : Form
+    public partial class GemiddeldeMDI : Form
     {
 
-        Form2 Gemiddelde = new Form2();
-        public Form1()
+        KindForm Gemiddelde = new KindForm();
+        public GemiddeldeMDI()
         {
             InitializeComponent();
         }

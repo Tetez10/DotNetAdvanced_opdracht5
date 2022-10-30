@@ -1,6 +1,6 @@
 ﻿namespace Oef2
 {
-    partial class DialogWindow
+    partial class KindForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,21 +31,22 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(361, 241);
+            this.button1.Location = new System.Drawing.Point(359, 297);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 23);
+            this.button1.Size = new System.Drawing.Size(103, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "ok";
+            this.button1.Text = "Nieuwewaarde";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(361, 212);
+            this.textBox1.Location = new System.Drawing.Point(359, 221);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 23);
             this.textBox1.TabIndex = 1;
@@ -53,22 +54,32 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(361, 181);
+            this.label1.Location = new System.Drawing.Point(359, 184);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 15);
+            this.label1.Size = new System.Drawing.Size(71, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Waarde";
+            this.label1.Text = "Gemiddelde";
             // 
-            // DialogWindow
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 15;
+            this.listBox1.Location = new System.Drawing.Point(47, 45);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(254, 109);
+            this.listBox1.TabIndex = 3;
+            // 
+            // KindForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.Name = "DialogWindow";
-            this.Text = "Form3";
+            this.Name = "KindForm";
+            this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,5 +90,6 @@
         private Button button1;
         private TextBox textBox1;
         private Label label1;
+        private ListBox listBox1;
     }
 }
