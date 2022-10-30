@@ -48,18 +48,18 @@ namespace Oef1
 
         private void smallToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Font  = new Font("verdana", 7);
+            textBox1.Font  = new Font("verdana", 10);
         }
 
         private void normalToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Font  = new Font("verdana", 9);
+            textBox1.Font  = new Font("verdana", 12);
 
         }
 
         private void largeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Font  = new Font("verdana", 12);
+            textBox1.Font  = new Font("verdana", 14);
 
         }
     }

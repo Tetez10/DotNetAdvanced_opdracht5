@@ -12,7 +12,9 @@ namespace Oef2
         private void Form1_Load(object sender, EventArgs e)
         {
           this.IsMdiContainer = true;
+            // ik attriubeer form 1 als Parent van form 2 
            Gemiddelde.MdiParent = this;
+            // Form tonen als mijn eerste form toon om die tegelijkertijd gaat tonen
             Gemiddelde.Show();
             
 
