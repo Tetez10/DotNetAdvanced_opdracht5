@@ -29,26 +29,22 @@ namespace Oef2
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-          
-            waarde = int.Parse(Interaction.InputBox("geef een waarde   =  "));
+        {          
+            //we gaan een een box gaan aantonen en die waarde binnen gaan gebruiken voor het gemiddelde
+            waarde = double.Parse(Interaction.InputBox("geef een waarde   =  "));
             //Items gaan uitprinten in mijn ListBox
             listBox1.Items.Add(waarde);
+            // we plaatsen onze bereking op 0 
             GemiddeldeBerekening = 0;
             for (int i = 0; i < listBox1.Items.Count; i++)
             {
                 GemiddeldeBerekening += Convert.ToInt32(listBox1.Items[i] +  "   ");
             }
-
-
-
-
             // berekening gemiddelde van mijn list
             GemiddeldeBerekening = GemiddeldeBerekening / listBox1.Items.Count;
             // berekening laten uitprinten in mijn textbox van gemiddelde
             textBox1.Text = GemiddeldeBerekening.ToString();            
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
