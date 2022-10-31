@@ -19,7 +19,8 @@ namespace Oef2
         {
             InitializeComponent();
         }
-        int GemiddeldeBerekening = 0;
+        double GemiddeldeBerekening = 0;
+        double waarde = 0;
 
         private void KindForm_Load(object sender, EventArgs e)
         {
@@ -29,7 +30,8 @@ namespace Oef2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double waarde = int.Parse(Interaction.InputBox("geef een waarde   =  "));
+          
+            waarde = int.Parse(Interaction.InputBox("geef een waarde   =  "));
             //Items gaan uitprinten in mijn ListBox
             listBox1.Items.Add(waarde);
             GemiddeldeBerekening = 0;
@@ -37,11 +39,14 @@ namespace Oef2
             {
                 GemiddeldeBerekening += Convert.ToInt32(listBox1.Items[i] +  "   ");
             }
-            
-          // berekening gemiddelde van mijn list
-             GemiddeldeBerekening = GemiddeldeBerekening / listBox1.Items.Count;
+
+
+
+
+            // berekening gemiddelde van mijn list
+            GemiddeldeBerekening = GemiddeldeBerekening / listBox1.Items.Count;
             // berekening laten uitprinten in mijn textbox van gemiddelde
-             textBox1.Text = GemiddeldeBerekening.ToString();            
+            textBox1.Text = GemiddeldeBerekening.ToString();            
         }
 
         private void label1_Click(object sender, EventArgs e)
