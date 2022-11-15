@@ -62,5 +62,10 @@ namespace Oef1
             textBox1.Font  = new Font("verdana", 14);
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
